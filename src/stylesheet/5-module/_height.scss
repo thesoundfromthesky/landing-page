@@ -1,0 +1,23 @@
+//change --H to small -h in next project
+
+.min-h-block {
+  display: block;
+  --min-height: calc(var(--h) * 1px);
+
+  min-height: var(--min-height);
+
+  @include media(laptop) {
+    --min-height: calc((var(--h) / var(--W)) * 100vw);
+  }
+}
+
+.min-h {
+  --h: auto;
+  --height: calc(var(--h) * 1px);
+
+  min-height: var(--height);
+
+  @include media(laptop) {
+    --height: calc((var(--h) / var(--W)) * 100vw);
+  }
+}

@@ -1,0 +1,48 @@
+.domain {
+  --fs: 36;
+  --fw: 400;
+  --fc: #303e4b;
+
+  text-align: center;
+}
+
+.cards {
+  --mt: 75;
+  --mb: 85;
+
+  --g-gap: 30;
+  --g-c: 2;
+
+  app-card {
+    --bsc: #2067dd;
+    --bsb: 7;
+
+    --r: 7;
+
+    --w: 555;
+    --h: 233;
+
+    --p: 40;
+
+    &:hover {
+      background-color: #2067dd;
+      * {
+        color: #fff;
+      }
+    }
+  }
+
+  .title {
+    --fs: 22;
+    --fw: 500;
+    --fc: #303e4b;
+  }
+
+  .content {
+    --fs: 15;
+    --fw: 400;
+    --fc: #748eaa;
+
+    --mt: 21;
+  }
+}

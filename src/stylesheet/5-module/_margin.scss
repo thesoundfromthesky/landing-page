@@ -1,0 +1,52 @@
+.mt {
+  --mt: ;
+  --margin-top: #{varpx(--mt)};
+
+  margin-top: var(--margin-top);
+
+  @include media(laptop) {
+    --margin-top: #{product(--mt, --width-ratio)};
+  }
+}
+
+.mb {
+  --mb: ;
+  --margin-bottom: #{varpx(--mb)};
+
+  margin-bottom: var(--margin-bottom);
+
+  @include media(laptop) {
+    --margin-bottom: #{product(--mb, --width-ratio)};
+  }
+}
+
+.mr {
+  --mr: ;
+
+  --margin-right: #{varpx(--mr)};
+  margin-right: var(--margin-right);
+
+  @include media(laptop) {
+    --margin-right: #{product(--mr, --width-ratio)};
+  }
+}
+
+.ml {
+  --margin-left: #{varpx(--ml)};
+
+  margin-left: var(--margin-left);
+
+  @include media(laptop) {
+    --margin-left: #{product(--ml, --width-ratio)};
+  }
+}
+
+.ml-l {
+  --margin-left: ;
+
+  margin-left: var(--margin-left);
+
+  @include media(laptop) {
+    --margin-left: calc(var(--width-ratio) * var(--ml));
+  }
+}

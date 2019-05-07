@@ -1,0 +1,56 @@
+:host {
+  position: relative;
+  --bgc: #2067dd;
+
+  --px: 30;
+  --py: 38;
+}
+
+card-title {
+  font-family: "Muli", sans-serif !important;
+  --fs: 22;
+  --fw: 400;
+  --fc: #fff;
+}
+
+card-content {
+  --fs: 15;
+  --fw: 400;
+  --fc: #fff;
+
+  --mt: 37;
+  --mb: 32;
+
+  ul {
+    --ml: 27;
+  }
+  li {
+    line-height: 2;
+    --mb: 30;
+  }
+  li:nth-child(1) {
+    list-style-image: url("/assets/img/nav.svg");
+  }
+  li:nth-child(2) {
+    list-style-image: url("/assets/img/num.svg");
+  }
+  li:nth-child(3) {
+    list-style-image: url("/assets/img/em.svg");
+  }
+}
+
+card-action {
+  img {
+    --w: 30;
+    --mr: 15;
+  }
+}
+
+.drone {
+  position: absolute;
+  left: 95%;
+  top: 95%;
+
+  transform: translate(-50%, -50%);
+  --w: 262;
+}

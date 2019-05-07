@@ -1,0 +1,12 @@
+.w {
+  --w: ;
+  --width: #{varpx(--w)};
+
+  width: 100%;
+  max-width: calc(var(--width));
+
+  @include media(laptop) {
+    --width: #{product(--w, --width-ratio)};
+    width: var(--width);
+  }
+}

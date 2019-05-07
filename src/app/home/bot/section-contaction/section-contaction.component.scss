@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  text-align: center;
+
+  --px: 422;
+  --pt: 100;
+}
+
+card-title {
+  --fs: 36;
+  --fw: 400;
+  --fc: #303e4b;
+}
+
+card-content {
+  --fs: 18;
+  --fw: 400;
+  --fc: #748eaa;
+
+  --mt: 21;
+  --mb: 49;
+}

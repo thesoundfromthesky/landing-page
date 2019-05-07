@@ -1,0 +1,65 @@
+// @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600|Open+Sans:600|Poppins:300,400|Muli:400");
+
+body {
+  font-size: var(--font-size-1);
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.2;
+  color: var(--font-color);
+}
+
+h1 {
+  font-size: var(--font-size-6);
+}
+h2 {
+  font-size: var(--font-size-5);
+}
+h3 {
+  font-size: var(--font-size-4);
+}
+h4 {
+  font-size: var(--font-size-3);
+}
+h5 {
+  font-size: var(--font-size-2);
+}
+h6 {
+  font-size: var(--font-size-1);
+}
+
+.font-half {
+  font-size: ratio(0.5);
+}
+
+.ft {
+  --fs: ;
+  --fw: ;
+  --fc: ;
+
+  // --font-ratio: calc(((var(--fs) / 16) * 1rem) + 0.3vw);
+  --font-size: calc((#{varrem(--fs)} / 16) + 0.3vw);
+  font-size: var(--font-size);
+  font-weight: var(--fw);
+  color: var(--fc);
+
+  @include media(desktop-4k) {
+    // --font-ratio: calc(((var(--fs) / 16) * 1rem) + 1vw);
+    --font-size: calc((#{varrem(--fs)} / 16) + 1vw);
+  }
+
+  &.title {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &.content {
+    font-family: "Poppins", sans-serif;
+  }
+
+  &.action {
+    font-family: "Open Sans", sans-serif;
+    background: var(--dark-green);
+  }
+
+  &.footer {
+    font-family: "Open Sans", sans-serif;
+  }
+}

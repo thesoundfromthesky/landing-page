@@ -1,0 +1,16 @@
+.grid {
+  --g-gap: 0;
+  --g-c: 0;
+
+  display: grid;
+  justify-content: center;
+
+  --grid-gap: calc(var(--g-gap) * 1px);
+  grid-gap: var(--grid-gap);
+  grid-template-columns: repeat(1, auto);
+
+  @include media(laptop) {
+    --grid-gap: calc(var(--g-gap) * var(--width-ratio));
+    grid-template-columns: repeat(var(--g-c), auto);
+  }
+}

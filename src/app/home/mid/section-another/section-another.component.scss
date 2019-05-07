@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+app-card {
+  --w: 458;
+}
+
+.title {
+  text-align: center;
+
+  --fs: 22;
+  --fw: 500;
+  --fc: #303e4b;
+}
+
+.content {
+  --fs: 18;
+  --fw: 400;
+  --fc: #748eaa;
+
+  --mt: 21;
+  --mb: 45;
+}
+
+card-action {
+  display: flex;
+  justify-content: center;
+}
+.action {
+  --fs: 16;
+  --fw: 500;
+  --fc: #fff;
+
+  --w: 210;
+  --h: 54;
+
+  --r: 7;
+}

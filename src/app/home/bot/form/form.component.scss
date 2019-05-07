@@ -1,0 +1,19 @@
+:host {
+  --px: 238;
+  --pb: 126;
+
+  overflow:hidden;
+}
+
+.container {
+  --bsc: #2067dd;
+  --bsb: 10;
+}
+
+app-card {
+  width: 100%;
+  align-self: stretch;
+  --bgc: #fff;
+  --pt: 38;
+  --pb: 40;
+}

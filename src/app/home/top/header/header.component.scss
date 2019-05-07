@@ -1,0 +1,63 @@
+:host {
+  --h: 685;
+
+  --img-width: 2873.66;
+  --img-x: -478.24;
+  --img-y: -488.76;
+
+  background-image: url("/assets/img/bg.png");
+  background-repeat: no-repeat;
+
+  --px: 170;
+}
+
+.brand {
+  --w: 172;
+
+  --mt: 17;
+}
+
+.section {
+  --mt: 75;
+}
+
+.card {
+  --mt: 105;
+}
+
+.title {
+  --fs: 46;
+  --fw: 600;
+  --fc: #fff;
+}
+
+.content {
+  --fs: 22;
+  --fw: 300;
+  --fc: #fff;
+
+  --w: 621;
+
+  --mt: 20;
+}
+
+.action {
+  --fs: 16;
+  --fw: 600;
+  --fc: #fff;
+
+  --w: 210;
+  --h: 54;
+
+  --mt: 45;
+  --mb: 155;
+
+  --r: 10;
+}
+
+.phone {
+  --w: 533.78;
+
+  --ml: 17.7;
+  --mb: 75;
+}

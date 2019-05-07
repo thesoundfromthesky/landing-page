@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  text-align: center;
+
+  --h: 80;
+
+  --bgc: var(--light-blue);
+
+  --fs: 15;
+  --fw: 400;
+  --fc: #303e4b;
+
+  --py: 30;
+}
+
+span {
+  color: #2067dd;
+}

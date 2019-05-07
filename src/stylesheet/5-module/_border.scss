@@ -1,0 +1,10 @@
+.border-radius {
+  --r: ;
+
+  --border-radius: #{varpx(--r)};
+  border-radius: var(--border-radius);
+
+  @include media(laptop) {
+    --border-radius: #{product(--r, --width-ratio)};
+  }
+}

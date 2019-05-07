@@ -1,0 +1,51 @@
+.bg-c {
+  --bgc: ;
+
+  --background-color: var(--bgc);
+
+  background-color: var(--background-color);
+  @include media(laptop) {
+    // --bgc: ;
+  }
+}
+
+.bg-pos-size {
+  --size: calc(var(--img-width) * 1px);
+  --x: calc(var(--img-x) * 1px);
+  --y: calc(var(--img-y) * 1px);
+
+  background-position: var(--x) var(--y);
+  background-size: var(--size);
+
+  @include media(laptop) {
+    --size: calc(var(--width-ratio) * var(--img-width));
+    --x: calc(var(--width-ratio) * var(--img-x));
+    --y: calc(var(--width-ratio) * var(--img-y));
+  }
+}
+
+.bg-img {
+  --bg-url: ;
+  --bg-width: ;
+  --bg-x: ;
+  --bg-y: ;
+
+  --background-url: var(--bg-url);
+  --background-position-x: #{varpx(--bg-x)};
+  --background-position-y: #{varpx(--bg-y)};
+  --background-size: #{varpx(--bg-width)};
+
+  background-image: var(--background-url);
+  background-repeat: no-repeat;
+  background-position: var(--background-position-x) var(--background-position-y);
+  background-size: var(--background-size);
+
+  @include media(laptop) {
+    // --background-position-x: calc(var(--width-ratio) * var(--bg-x));
+    // --background-position-y: calc(var(--width-ratio) * var(--bg-y));
+    // --background-size: calc(var(--width-ratio) * var(--bg-width));
+    --background-position-x: #{product(--bg-x, --width-ratio)};
+    --background-position-y: #{product(--bg-y, --width-ratio)};
+    --background-size: #{product(--bg-width, --width-ratio)};
+  }
+}

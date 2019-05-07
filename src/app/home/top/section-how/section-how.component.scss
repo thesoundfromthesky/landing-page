@@ -1,0 +1,54 @@
+:host {
+  --h: 595;
+
+  --px: 170;
+  --pb: 140;
+}
+
+.section {
+  --h: 414;
+
+  &.title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    --fs: 36;
+    --fw: 400;
+    --fc: #303e4b;
+  }
+}
+
+.section-card {
+  --w: 1140;
+}
+
+.card {
+  --bgc: #fff;
+
+  --w: 360;
+  --h: 310;
+
+  --r: 7;
+  
+  --p: 30;
+
+  --mt: 60;
+
+  img {
+    align-self: flex-start;
+  }
+}
+
+.title {
+  --fs: 22;
+  --fw: 500;
+  --fc: #303e4b;
+
+  --mt: 30;
+  --mb: 21;
+}
+
+.content {
+  --fs: 15;
+  --fw: 400;
+  --fc: #748eaa;
+}

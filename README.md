@@ -1,3 +1,11 @@
+# Incomplete Project
+ The project is 95% completed.
+
+# Credit
+
+Design found from <br>
+https://www.xdguru.com/free-tech-xd-landing-page/
+
 # LandingPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
