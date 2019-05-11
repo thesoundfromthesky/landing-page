@@ -15,9 +15,9 @@
   grid-gap: var(--grid-g-gap);
 
   @include media(laptop) {
-    --grid-g-c: repeat(var(--g-c), auto);
-    --grid-g-r: repeat(var(--g-r), auto);
-    --grid-g-gap: #{product(--g-gap, --width-ratio)};
+    --grid-g-c: repeat(var(--g-c), auto) !important;
+    --grid-g-r: repeat(var(--g-r), auto) !important;
+    --grid-g-gap: #{product(--g-gap, --width-ratio)} !important;
   }
 }
 
