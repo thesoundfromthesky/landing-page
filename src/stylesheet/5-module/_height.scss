@@ -1,0 +1,11 @@
+.min-h {
+  --min-h: none;
+
+  --height-min-h: #{varpx(--min-h)};
+
+  min-height: var(--height-min-h);
+
+  @include media(laptop) {
+    --height-min-h: #{product(--min-h, --width-ratio)};
+  }
+}

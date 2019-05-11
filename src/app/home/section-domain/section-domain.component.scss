@@ -1,0 +1,107 @@
+:host {
+  --bgc: #fff;
+  --px: var(--side-padding);
+
+  background-image: url("/assets/img/mask-line-d.png"),
+    url("/assets/img/mask-line-c.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 110%;
+  background-size: 100%;
+
+  @media only screen and (min-width: 1441px) {
+    background-size: 30%;
+  }
+}
+
+.domain-title {
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  --fs: 36;
+  --fw: 400;
+  --fc: #303e4b;
+
+  --pt: 96;
+  --pb: 76;
+}
+
+.domain-cards {
+  --g-c: 2;
+  --g-gap: 30;
+}
+
+.card {
+  --bsb: 10;
+  --bsc: #707070;
+
+  --br: 10;
+
+  --p: 40;
+
+  --max-w: 555;
+  --min-h: 233;
+
+  &:hover {
+    --bgc: #2067dd;
+    --bsc: #2067dd;
+
+    cursor: pointer;
+
+    * {
+      --fc: #fff;
+    }
+  }
+}
+
+.card-title {
+  --fs: 22;
+  --fw: 500;
+  --fc: #303e4b;
+}
+
+.card-content {
+  --fs: 15;
+  --fw: 400;
+  --fc: #748eaa;
+
+  --mt: 21;
+}
+
+.domain-another {
+  text-align: center;
+  --pt: 85;
+  --pb: 82;
+}
+
+.domain-another-card {
+  margin: 0 auto;
+  --max-w: 458;
+  --min-h: 200;
+}
+
+.another-card-title {
+  --fs: 22;
+  --fw: 500;
+  --fc: #303e4b;
+}
+
+.another-card-content {
+  --fs: 18;
+  --fw: 400;
+  --fc: #748eaa;
+
+  --mt: 21;
+  --mb: 45;
+}
+
+.another-card-action {
+  --bgc: #6fbd13;
+  --br: 10;
+
+  --fs: 16;
+  --fw: 600;
+  --fc: #fff;
+
+  --px: 54;
+  --py: 16;
+}

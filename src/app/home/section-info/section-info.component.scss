@@ -1,0 +1,89 @@
+:host {
+  --bgc: #2067dd;
+  --br: 10;
+  --bsc: #748eaa;
+  --bsb: 10;
+
+  --px: 30;
+  --pt: 38;
+  --pb: 151;
+
+  position: relative;
+}
+
+.contact-card {
+  margin: auto;
+  --max-w: 267;
+}
+.contact-card-title {
+  font-family: "Muli", sans-serif;
+  --fs: 22;
+  --fc: #fff;
+}
+
+.contact-card-content {
+  font-family: "Open Sans", sans-serif;
+  --fs: 15;
+  --fc: #fff;
+
+  --mt: 38;
+  --mb: 32;
+}
+
+.contact-ul {
+  --ml: 25;
+  > li {
+    position: relative;
+    line-height: 2;
+    --mb: 30;
+  }
+  > li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 3%;
+    width: 5%;
+    padding-top: 8%;
+    background-image: url("/assets/img/nav.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  > li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: -11%;
+    top: 30%;
+    width: 7%;
+    padding-top: 8%;
+    background-image: url("/assets/img/num.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  > li:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: -11%;
+    top: 30%;
+    width: 8%;
+    padding-top: 6%;
+    background-image: url("/assets/img/em.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.card-action {
+  img {
+    --w: 30;
+    --mr: 15;
+  }
+}
+
+.drone {
+  position: absolute;
+  left: 95%;
+  top: 95%;
+
+  transform: translate(-50%, -50%);
+  --w: 262;
+}

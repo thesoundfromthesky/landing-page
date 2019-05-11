@@ -1,0 +1,25 @@
+:host {
+  --px: 170;
+  --py: 134;
+
+  --bg-url: url("/assets/img/about.png");
+  --bg-width: 1886;
+  --bg-x: 0;
+  --bg-y: 0;
+}
+
+.about-card {
+  --max-w: 595;
+}
+
+.about-card-title {
+  --fs: 36;
+  --fc: #fff;
+}
+
+.about-card-content {
+  --fs: 15;
+  --fc: #fff;
+
+  --mt: 40;
+}

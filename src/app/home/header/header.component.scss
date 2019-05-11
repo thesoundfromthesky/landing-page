@@ -1,0 +1,58 @@
+:host {
+  --px: var(--side-padding);
+  --pt: 17;
+  --pb: 75;
+
+  --bgc: #f5f9fe;
+  --bg-url: url("/assets/img/bg.png");
+  --bg-width: 2873.66;
+  --bg-x: -478.24;
+  --bg-y: -488.76;
+}
+
+.brand {
+  --max-w: 172;
+}
+
+.card {
+  --max-w: 621;
+
+  --pt: 103;
+  --pb: 227;
+
+  .card-title {
+    --fs: 46;
+    --fw: 600;
+    --fc: #fff;
+  }
+
+  .card-content {
+    --fs: 22;
+    --fw: 300;
+    --fc: #fff;
+
+    --mt: 23;
+    --mb: 45;
+  }
+
+  .card-action {
+    --bgc: var(--btn-bgc);
+
+    --fs: 16;
+    --fw: 600;
+    --fc: #fff;
+
+    --br: 10;
+
+    --px: 55;
+    --py: 15;
+  }
+}
+
+.fig-header {
+  align-self: center;
+  flex: 1;
+}
+.header-img {
+  --max-w: 533.78;
+}

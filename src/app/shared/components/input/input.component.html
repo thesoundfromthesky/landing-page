@@ -1,0 +1,17 @@
+<label for="app-input" class="block mb">{{ label }}</label>
+<ng-container *ngIf="!textarea; else textareaBlock">
+  <input
+    id="app-input"
+    type="text"
+    [placeholder]="placeholder"
+    class="border border-radius p ft"
+  />
+</ng-container>
+<ng-template #textareaBlock
+  ><textarea
+    id="app-input"
+    type="text"
+    [placeholder]="placeholder"
+    class="border border-radius p ft block min-h"
+  ></textarea
+></ng-template>

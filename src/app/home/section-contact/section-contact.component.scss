@@ -1,0 +1,25 @@
+:host {
+  --bgc: #f5f9fe;
+  --px: 238;
+  --pt: 100;
+  --pb: 125;
+}
+
+.contact-card {
+  text-align: center;
+}
+
+.contact-card-title {
+  --fs: 36;
+  --fc: #303e4b;
+}
+
+.contact-card-content {
+  --fs: 18;
+  --fc: #748eaa;
+
+  line-height: 1.5;
+
+  --mt: 21;
+  --mb: 36;
+}

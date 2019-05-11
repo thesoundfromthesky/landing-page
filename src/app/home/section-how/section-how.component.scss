@@ -1,0 +1,55 @@
+:host {
+  --px: var(--side-padding);
+  --pt: 30;
+  --pb: 155;
+
+  --bgc: #f5f9fe;
+}
+
+.how-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  --fs: 36;
+  --fw: 400;
+  --fc: #303e4b;
+
+  --pb: 80;
+}
+
+.how-content {
+  --g-c: 3;
+  --g-gap: 30;
+}
+
+.card {
+  --max-w: 360;
+  --min-h: 310;
+
+  --p: 30;
+
+  --bgc: #fff;
+  --br: 10;
+
+  --bsc: #2067dd;
+  --bsb: 5;
+}
+
+.card-icon {
+  align-self: flex-start;
+  --max-w: 42.19;
+}
+
+.card-title {
+  --fs: 22;
+  --fw: 500;
+  --fc: #303e4b;
+
+  --mt: 30;
+  --mb: 21;
+}
+
+.card-content {
+  --fs: 15;
+  --fw: 400;
+  --fc: #748eaa;
+}

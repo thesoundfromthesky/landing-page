@@ -1,0 +1,68 @@
+.my {
+  --my: none;
+
+  --margin-y: #{varpx(--my)};
+
+  margin-top: var(--margin-y);
+  margin-bottom: var(--margin-y);
+
+  @include media(laptop) {
+    --margin-y: #{product(--my, --width-ratio)};
+  }
+}
+
+.mt {
+  --mt: none;
+
+  --margin-mt: #{varpx(--mt)};
+
+  margin-top: var(--margin-mt);
+
+  @include media(laptop) {
+    --margin-mt: #{product(--mt, --width-ratio)};
+  }
+}
+
+.mb {
+  --mb: none;
+
+  --margin-mb: #{varpx(--mb)};
+
+  margin-bottom: var(--margin-mb);
+  @include media(laptop) {
+    --margin-mb: #{product(--mb, --width-ratio)};
+  }
+}
+
+.mr {
+  --mr: ;
+
+  --margin-right: #{varpx(--mr)};
+  margin-right: var(--margin-right);
+
+  @include media(laptop) {
+    --margin-right: #{product(--mr, --width-ratio)};
+  }
+}
+
+.ml {
+  --ml: none;
+
+  --margin-left-ml: #{varpx(--ml)};
+
+  margin-left: var(--margin-left-ml);
+
+  @include media(laptop) {
+    --margin-left-ml: #{product(--ml, --width-ratio)};
+  }
+}
+
+.ml-l {
+  --margin-left: ;
+
+  margin-left: var(--margin-left);
+
+  @include media(laptop) {
+    --margin-left: calc(var(--width-ratio) * var(--ml));
+  }
+}

@@ -1,0 +1,27 @@
+.w {
+  --w: none;
+
+  --w-ratio: #{wRatio(--w)};
+
+  --width-w: var(--w);
+
+  width: var(--width-w);
+
+  @include media(laptop) {
+    --width-w: #{varvw(--w-ratio)};
+  }
+}
+
+.max-w {
+  --max-w: none;
+
+  --width-max-w: #{varpx(--max-w)};
+
+  width: 100%;
+  max-width: var(--width-max-w);
+  height: auto;
+
+  @include media(laptop) {
+    --width-max-w: #{product(--max-w, --width-ratio)};
+  }
+}

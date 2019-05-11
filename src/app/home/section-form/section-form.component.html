@@ -1,0 +1,26 @@
+<app-card class="form-card">
+  <card-title class="form-card-title">Send us a message</card-title>
+  <card-content class="form-card-content">
+    <form onSubmit="return false" class="form grid">
+      <app-input
+        label="Name"
+        placeholder="Enter your full name"
+        class="app-input name"
+      ></app-input>
+      <app-input
+        label="Email"
+        placeholder="Enter your email"
+        class="app-input email"
+      ></app-input>
+      <app-input
+        label="Message"
+        [textarea]="true"
+        placeholder="Enter your message"
+        class="app-input message"
+      ></app-input>
+    </form>
+  </card-content>
+  <card-action>
+    <button cardAction class="form-card-action">CONTACT US</button>
+  </card-action>
+</app-card>

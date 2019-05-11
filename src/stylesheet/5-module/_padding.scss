@@ -1,0 +1,63 @@
+.p {
+  --p: none;
+
+  --padding-p: #{varpx(--p)};
+
+  padding: var(--padding-p);
+
+  @include media(laptop) {
+    --padding-p: #{product(--p, --width-ratio)};
+  }
+}
+
+.px {
+  --px: none;
+
+  --px-ratio: #{wRatio(--px)};
+
+  --padding-x: calc(#{varvw(--px-ratio)} / 2);
+
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+
+  @include media(laptop) {
+    --padding-x: #{varvw(--px-ratio)};
+  }
+}
+
+.py {
+  --py: none;
+
+  --padding-y: #{varpx(--py)};
+
+  padding-top: var(--padding-y);
+  padding-bottom: var(--padding-y);
+
+  @include media(laptop) {
+    --padding-y: #{product(--py, --width-ratio)};
+  }
+}
+
+.pt {
+  --pt: none;
+
+  --padding-pt: #{varpx(--pt)};
+
+  padding-top: var(--padding-pt);
+
+  @include media(laptop) {
+    --padding-pt: #{product(--pt, --width-ratio)};
+  }
+}
+
+.pb {
+  --pb: none;
+
+  --padding-pb: #{varpx(--pb)};
+
+  padding-bottom: var(--padding-pb);
+
+  @include media(laptop) {
+    --padding-pb: #{product(--pb, --width-ratio)};
+  }
+}
