@@ -9,21 +9,6 @@
   }
 }
 
-.bg-pos-size {
-  --size: calc(var(--img-width) * 1px);
-  --x: calc(var(--img-x) * 1px);
-  --y: calc(var(--img-y) * 1px);
-
-  background-position: var(--x) var(--y);
-  background-size: var(--size);
-
-  @include media(laptop) {
-    --size: calc(var(--width-ratio) * var(--img-width));
-    --x: calc(var(--width-ratio) * var(--img-x));
-    --y: calc(var(--width-ratio) * var(--img-y));
-  }
-}
-
 .bg-img {
   --bg-url: none;
   --bg-width: none;

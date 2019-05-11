@@ -56,13 +56,3 @@
     --margin-left-ml: #{product(--ml, --width-ratio)};
   }
 }
-
-.ml-l {
-  --margin-left: ;
-
-  margin-left: var(--margin-left);
-
-  @include media(laptop) {
-    --margin-left: calc(var(--width-ratio) * var(--ml));
-  }
-}
